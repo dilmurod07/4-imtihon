@@ -1,0 +1,10 @@
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+#allproducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
