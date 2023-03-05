@@ -1,9 +1,32 @@
 .container {
-  width: 1240px;
+  width: 1440px;
   margin: 0 auto;
 }
-#allproducts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  background-color: grey;
+}
+.Post {
+  width: 200px;
+  margin: 0 auto;
+  display: none;
+  input {
+    margin-top: 15px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+  }
+}
+#addbtn {
+  padding: 15px;
+}
+#addPost {
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+  transform: translateX(40px);
+  margin-top: 20px;
+}
+.description {
+  width: 280px;
+  background-color: blue;
 }
