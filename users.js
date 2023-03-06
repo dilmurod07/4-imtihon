@@ -23,6 +23,7 @@ fetch("https://api.escuelajs.co/api/v1/users", {})
       div2.appendChild(titleInput);
       div2.appendChild(priceInput);
       div2.appendChild(updateBtn);
+      div2.className = "div2";
       let img = document.createElement("img");
       let h1 = document.createElement("h1");
       let h2 = document.createElement("h2");
@@ -131,7 +132,9 @@ addusers2.addEventListener("click", function () {
   let h2 = document.createElement("h2");
   let p = document.createElement("p");
   let p2 = document.createElement("p");
-
+  let deleteBTN = document.createElement("button");
+  let deleteBTN2 = document.createTextNode("DELETE");
+  deleteBTN.appendChild(deleteBTN2);
   div.className = "card";
   img.setAttribute("src", urlInput.value);
   h1.textContent = nameInput.value;
@@ -144,11 +147,15 @@ addusers2.addEventListener("click", function () {
   div.appendChild(p);
   div.appendChild(p2);
   div.appendChild(editBtn);
+  div.appendChild(deleteBTN);
   allcard.appendChild(div);
   users.style.display = "none";
 
   div2.style.display = "none";
   editBtn.addEventListener("click", function () {
     div2.style.display = "block";
+  });
+  deleteBTN.addEventListener("click", function () {
+    div.style.display = "none";
   });
 });
