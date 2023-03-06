@@ -150,6 +150,9 @@ addPost.addEventListener("click", function () {
   img.style.height = "200px";
   fetch("https://api.escuelajs.co/api/v1/products", {
     method: "POST",
+    headers: {
+      "Content-type": " application/json; charset=UTF-8",
+    },
     body: JSON.stringify({
       title: `${title.value}`,
       price: `${priceInput.value}`,

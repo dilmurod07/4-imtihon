@@ -21,6 +21,10 @@ body {
 
 #addbtn {
   padding: 15px;
+  background: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
 #addPost {
@@ -34,4 +38,14 @@ body {
 .description {
   width: 280px;
   background-color: blue;
+}
+
+.link {
+  width: 50px;
+  font-size: 18px;
+  padding: 17px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
