@@ -79,7 +79,7 @@ fetch("https://api.escuelajs.co/api/v1/users", {})
         return (div2.style.display = "none");
       });
       deleteBTN.addEventListener("click", function () {
-        return (div.style.display = "none");
+        div.style.display = "none";
       });
     }
   });
